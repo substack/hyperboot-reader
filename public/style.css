@@ -1,0 +1,46 @@
+body {
+  font-family: monospace;
+}
+
+button {
+  font-family: monospace;
+}
+
+.header {
+  margin-top: -1em;
+}
+
+.header .title {
+  display: inline-block;
+  width: 11ex;
+  color: black;
+  text-shadow: 1px 1px 1px lightgray;
+  margin-top: 0.5em;
+}
+
+.header .buttons {
+  display: inline-block;
+}
+
+.header .buttons .icon {
+  margin-left: 1ex;
+  min-width: 10ex;
+  font-size: 1.2em;
+  background-color: black;
+  color: white;
+  border: 2px outset darkgray;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header .buttons .icon.active {
+  background-color: lightgray;
+  color: black;
+  cursor: default;
+  box-shadow: 1px 1px 1px lightgray;
+  border-style: inset;
+}
+
+.header .buttons .icon.active:focus {
+  outline: 0px;
+}
