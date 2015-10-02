@@ -4,6 +4,7 @@ body {
 
 button {
   font-family: monospace;
+  text-shadow: 1px 1px 1px white;
 }
 
 .header {
@@ -43,4 +44,16 @@ button {
 
 .header .buttons .icon.active:focus {
   outline: 0px;
+}
+
+.content .toolbar {
+  margin-bottom: 1em;
+  background-color: black;
+  padding: 2px;
+}
+
+.content .toolbar button {
+  background-color: lightgray;
+  padding: 4px;
+  min-width: 9ex;
 }
