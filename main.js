@@ -1,23 +1,24 @@
 var xtend = require('xtend')
-var fs = require('fs')
+
+var level = require('level-browserify')
+var defaults = require('levelup-defaults')
+var db = defaults(level('hyperboot'), { valueEncoding: 'json' })
+
 var render = require('./lib/render.js')
+var busloop = require('./lib/bus_loop.js')
 
-var icons = {
-  hyperpaint: fs.readFileSync('public/hyperpaint.svg', 'base64')
-}
-
-var main = require('main-loop')
-var loop = main({
+var loop = busloop({
   url: location.pathname,
-  installed: [
-    { title: 'hyperpaint', icon: icons.hyperpaint }
-  ]
+  installed: [],
+  activity: []
 }, render, require('virtual-dom'))
+require('./lib/bus.js')(loop, db)
+
 var root = document.querySelector('#content')
 root.replaceChild(loop.target, root.childNodes[0])
 
 var singlePage = require('single-page')
 var show = singlePage(function (href) {
-  loop.update(xtend(loop.state, { url: href }))
+  loop.extend({ url: href })
 })
 require('catch-links')(window, show)

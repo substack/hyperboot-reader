@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "browserify": {
-    "transform": [ "brfs" ]
+    "transform": [
+      "brfs"
+    ]
   },
   "scripts": {
     "build": "browserify main.js | uglifyjs -cm | tee public/bundle.js | gzip > public/bundle.js.gz",
@@ -35,12 +37,17 @@
     "catch-links": "^2.0.0",
     "ecstatic": "^1.0.1",
     "html-version": "^1.1.2",
-    "hyperboot": "^3.0.0",
+    "hyperboot": "^4.0.0",
     "level-browserify": "^1.0.1",
+    "levelup-defaults": "^1.0.2",
     "main-loop": "^3.2.0",
+    "page-bus": "^3.0.1",
     "parallelshell": "^2.0.0",
+    "randombytes": "^2.0.1",
     "routes": "^2.1.0",
     "single-page": "^1.0.0",
+    "subleveldown": "^2.0.0",
+    "through2": "^2.0.0",
     "uglify-js": "^2.4.24",
     "virtual-dom": "^2.1.1",
     "watchify": "^3.4.0",

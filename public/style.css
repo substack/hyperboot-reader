@@ -21,9 +21,10 @@ button {
 
 .header .buttons {
   display: inline-block;
+  margin-bottom: 0.5em;
 }
 
-.header .buttons .icon {
+.header .buttons button {
   margin-left: 1ex;
   min-width: 10ex;
   font-size: 1.2em;
@@ -32,17 +33,29 @@ button {
   border: 2px outset darkgray;
   padding: 5px;
   cursor: pointer;
+  margin-bottom: 0.25em;
 }
 
-.header .buttons .icon.active {
+.header .buttons button:hover {
+  background-color: deeppink;
+  border-color: pink;
+}
+
+.header .buttons button:active {
+  background-color: lime;
+  border: 2px inset lime;
+}
+
+.header .buttons button.active {
   background-color: lightgray;
   color: black;
   cursor: default;
   box-shadow: 1px 1px 1px lightgray;
   border-style: inset;
+  border-color: darkgray;
 }
 
-.header .buttons .icon.active:focus {
+.header .buttons button.active:focus {
   outline: 0px;
 }
 
@@ -56,4 +69,55 @@ button {
   background-color: lightgray;
   padding: 4px;
   min-width: 9ex;
+}
+
+.content .toolbar button:hover {
+  background-color: deeppink;
+  border-color: deeppink;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.content .toolbar button:active {
+  background-color: lime;
+  border-color: lime;
+}
+
+.content .toolbar form {
+  display: inline-block;
+}
+
+.content .toolbar input[type="text"] {
+  margin-right: 1ex;
+  margin-left: 0.5ex;
+  width: 25ex;
+}
+
+.icons .icon {
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 9em;
+  height: 9em;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+
+.icons .icon img {
+  height: 100%;
+  max-height: 7.5em;
+}
+
+.icons .icon:hover {
+  background-color: deeppink;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  cursor: pointer;
+  border: 2px outset pink;
+}
+
+.icons .icon:active {
+  background-color: lime;
+  border: 2px inset lime;
 }
