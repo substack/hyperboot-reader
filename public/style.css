@@ -71,6 +71,11 @@ button {
   min-width: 9ex;
 }
 
+.content .toolbar button.clickme {
+  background-color: darkorange;
+  border: 2px outset orange;
+}
+
 .content .toolbar button:hover {
   background-color: deeppink;
   border-color: deeppink;
