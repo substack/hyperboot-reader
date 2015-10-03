@@ -47,6 +47,7 @@
     "routes": "^2.1.0",
     "single-page": "^1.0.0",
     "subleveldown": "^2.0.0",
+    "text-blob-builder": "0.0.1",
     "through2": "^2.0.0",
     "uglify-js": "^2.4.24",
     "virtual-dom": "^2.1.1",
