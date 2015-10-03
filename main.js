@@ -8,7 +8,7 @@ var render = require('./lib/render.js')
 var busloop = require('./lib/bus_loop.js')
 
 var loop = busloop({
-  url: location.pathname,
+  url: location.pathname + (location.search || '') + (location.hash || ''),
   installed: [],
   activity: []
 }, render, require('virtual-dom'))
