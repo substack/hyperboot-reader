@@ -28,6 +28,7 @@ var show = singlePage(function (href) {
   loop.extend({ url: href })
 })
 require('catch-links')(window, show)
+loop.bus.on('go', show)
 
 window.addEventListener('keydown', onkey)
 window.addEventListener('keyup', onkey)
