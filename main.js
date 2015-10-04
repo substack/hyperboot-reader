@@ -16,7 +16,7 @@ var loop = busloop({
   installed: [],
   activity: []
 }, render, require('virtual-dom'))
-require('./lib/bus.js')(loop, db)
+require('./lib/events.js')(loop, db)
 
 var root = document.querySelector('#content')
 root.replaceChild(loop.target, root.childNodes[0])
