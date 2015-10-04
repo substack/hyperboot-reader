@@ -31,6 +31,7 @@ require('catch-links')(window, show)
 
 window.addEventListener('keydown', onkey)
 window.addEventListener('keyup', onkey)
+window.addEventListener('mousemove', onkey)
 
 function onkey (ev) {
   if (loop.state.keys.shift !== ev.shiftKey) {
