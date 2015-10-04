@@ -14,7 +14,9 @@ var busloop = require('./lib/bus_loop.js')
 var loop = busloop({
   url: location.pathname + (location.search || '') + (location.hash || ''),
   installed: [],
-  activity: []
+  activity: [],
+  info: null,
+  keys: {}
 }, render, require('virtual-dom'))
 require('./lib/events.js')(loop, db)
 
@@ -26,3 +28,13 @@ var show = singlePage(function (href) {
   loop.extend({ url: href })
 })
 require('catch-links')(window, show)
+
+window.addEventListener('keydown', onkey)
+window.addEventListener('keyup', onkey)
+
+function onkey (ev) {
+  if (loop.state.keys.shift !== ev.shiftKey) {
+    loop.state.keys.shift = ev.shiftKey
+    loop.update(loop.state)
+  }
+}

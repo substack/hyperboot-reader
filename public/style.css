@@ -1,5 +1,6 @@
 body {
   font-family: monospace;
+  margin: 0px;
 }
 
 button {
@@ -8,7 +9,6 @@ button {
 }
 
 .header {
-  margin-top: -1em;
 }
 
 .header .title {
@@ -17,6 +17,7 @@ button {
   color: black;
   text-shadow: 1px 1px 1px lightgray;
   margin-top: 0.5em;
+  margin-left: 0.5ex;
 }
 
 .header .buttons {
@@ -62,7 +63,15 @@ button {
 .content .toolbar {
   margin-bottom: 1em;
   background-color: black;
-  padding: 2px;
+  padding: 1ex;
+  color: white;
+  text-shadow: 1px 1px 1px darkgray;
+}
+
+.content .toolbar.shift {
+  background-color: darkorange;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .content .toolbar button {
@@ -98,6 +107,11 @@ button {
   width: 25ex;
 }
 
+.content .toolbar .info {
+  display: inline-block;
+  margin-left: 2ex;
+}
+
 .icons .icon {
   vertical-align: top;
   position: relative;
@@ -120,6 +134,11 @@ button {
   color: white;
   cursor: pointer;
   border: 2px outset pink;
+}
+
+.icons.shift .icon:hover {
+  background-color: darkorange;
+  border: 2px outset orange;
 }
 
 .icons .icon:active {
