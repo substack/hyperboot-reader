@@ -36,7 +36,6 @@ window.addEventListener('mousemove', onkey)
 
 function onkey (ev) {
   if (loop.state.keys.shift !== ev.shiftKey) {
-    loop.state.keys.shift = ev.shiftKey
-    loop.update(loop.state)
+    loop.bus.emit(ev.shiftKey ? 'shift' : 'unshift')
   }
 }
