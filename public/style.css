@@ -266,7 +266,7 @@ button {
   background-color: black;
   border: 2px outset darkgray;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px lightgray;
   padding: 5px;
 }
 
@@ -313,7 +313,7 @@ button {
   background-color: black;
   border: 2px outset darkgray;
   color: white;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px white;
   margin-bottom: 0.5em;
   padding: 1ex;
 }
@@ -334,6 +334,18 @@ button {
 
 .content .app-settings .versions button.help {
   margin-left: 2ex;
+  background-color: lightgray;
+  border: 2px outset gray;
+}
+
+.content .app-settings .versions button.help:hover {
+  background-color: deeppink;
+  border: 2px outset deeppink;
+}
+
+.content .app-settings .versions button.help:active {
+  background-color: lime;
+  border: 2px inset lime;
 }
 
 .content .app-settings .locations {
