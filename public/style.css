@@ -207,8 +207,18 @@ button {
 .content .app-settings .versions button.version {
   display: inline-block;
   width: 100%;
-  background-color: darkgray;
+  background-color: black;
   color: white;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 0.5em;
+  padding: 1ex;
+}
+
+.content .app-settings .versions button.version.active {
+  background-color: lightgray;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+  border: 2px inset darkgray;
 }
 
 .content .app-settings .locations {
