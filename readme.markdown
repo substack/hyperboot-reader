@@ -23,6 +23,7 @@ content gathered from peer to peer networks like webtorrent and ipfs.
 * [ ] check for updates over http
 * [ ] check for updates over webtorrent/bep44
 * [ ] check for updates over ipfs
+* [ ] show activity feed
 * [ ] self-manage hyperboot-reader versions using hyperboot-reader
 * [ ] follow users over http
 * [ ] follow users over webtorrent/bep44
