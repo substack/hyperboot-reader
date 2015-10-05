@@ -66,6 +66,81 @@ button {
   outline: 0px;
 }
 
+.modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.modal .screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: darkgray;
+  opacity: 0.5;
+  z-index: 100;
+}
+
+.modal > .box {
+  position: relative;
+  min-width: 200px;
+  max-width: 500px;
+  min-height: 200px;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: white;
+  z-index: 101;
+}
+
+.modal > .box .message {
+  padding: 2ex;
+}
+
+.modal > .box .title {
+  position: relative;
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px lightgray;
+  padding: 1.8ex;
+}
+
+.modal > .box .title .close {
+  position: absolute;
+  top: 0.5ex;
+  right: 0.5ex;
+  display: inline-block;
+  color: white;
+  padding: 1ex;
+  padding-left: 2ex;
+  padding-right: 2ex;
+  background-color: darkgray;
+  border: 2px outset lightgray;
+}
+
+.modal > .box .title .close:hover {
+  background-color: deeppink;
+  border: 2px outset deeppink;
+  cursor: pointer;
+}
+
+.modal > .box .title .close:active {
+  background-color: lime;
+  border: 2px inset lime;
+}
+
+.modal .inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+}
+
 .content .toolbar {
   margin-bottom: 1em;
   background-color: black;
@@ -234,7 +309,7 @@ button {
 
 .content .app-settings .versions button.version {
   display: inline-block;
-  width: 100%;
+  min-width: 12ex;
   background-color: black;
   border: 2px outset darkgray;
   color: white;
@@ -255,6 +330,10 @@ button {
   text-shadow: 1px 1px 1px white;
   border: 2px inset darkgray;
   cursor: default;
+}
+
+.content .app-settings .versions button.help {
+  margin-left: 2ex;
 }
 
 .content .app-settings .locations {
