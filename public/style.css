@@ -172,6 +172,7 @@ button {
   border: 2px solid black;
   text-align: center;
   padding: 5px;
+  margin-bottom: 1em;
 }
 
 .content .app-settings .icon img {
@@ -194,10 +195,22 @@ button {
   width: 100%;
 }
 
-.content .app-settings .versions-box {
-  vertical-align: top;
+.content .app-settings .versions {
+  position: relative;
   display: inline-block;
+  vertical-align: top;
   min-height: 400px;
   margin-left: 5ex;
   margin-top: -1em;
+}
+
+.content .app-settings .versions button.version {
+  display: inline-block;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+}
+
+.content .app-settings .locations {
+  margin-bottom: 1em;
 }
