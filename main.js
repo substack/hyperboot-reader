@@ -13,7 +13,7 @@ var busloop = require('./lib/bus_loop.js')
 
 var loop = busloop({
   url: location.pathname + (location.search || '') + (location.hash || ''),
-  installed: [],
+  apps: {},
   activity: [],
   info: null,
   keys: {}

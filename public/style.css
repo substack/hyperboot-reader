@@ -8,7 +8,13 @@ button {
   text-shadow: 1px 1px 1px white;
 }
 
-.header {
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .header .title {
@@ -153,5 +159,45 @@ button {
   border: 2px inset lime;
 }
 
-.content .configure {
+.content .app-settings {
+  position: relative;
+  padding: 1em;
+  padding-top: 0em;
+}
+
+.content .app-settings .icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+.content .app-settings .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content .app-settings .right {
+  display: inline-block;
+  margin-top: -1em;
+  margin-left: 2ex;
+  vertical-align: top;
+}
+
+.content .app-settings .right h2 {
+  background-color: black;
+  color: white;
+  padding-left: 2ex;
+  margin-left: -1.5ex;
+  width: 100%;
+}
+
+.content .app-settings .versions-box {
+  vertical-align: top;
+  display: inline-block;
+  min-height: 400px;
+  margin-left: 5ex;
+  margin-top: -1em;
 }
