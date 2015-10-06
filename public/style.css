@@ -133,6 +133,17 @@ button {
   border: 2px inset lime;
 }
 
+.modal > .box .buttons {
+  margin-top: 2em;
+}
+
+.modal > .box .buttons {
+}
+
+.modal > .box .buttons button.cancel {
+  margin-left: 20ex;
+}
+
 .modal .inner {
   position: absolute;
   top: 0px;
@@ -261,22 +272,32 @@ button {
   margin-right: 2ex;
 }
 
-.content .app-settings button.run {
+.content .app-settings button {
   width: 120px;
   background-color: black;
   border: 2px outset darkgray;
   color: white;
   text-shadow: 1px 1px 1px lightgray;
   padding: 5px;
+  margin-bottom: 1em;
 }
 
-.content .app-settings button.run:hover {
+.content .app-settings button.remove {
+  background-color: crimson;
+  color: white;
+  text-shadow: 1px 1px 1px darkred;
+  border: 2px outset red;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.content .app-settings button:hover {
   background-color: deeppink;
   border: 2px outset pink;
   cursor: pointer;
 }
 
-.content .app-settings button.run:active {
+.content .app-settings button:active {
   background-color: lime;
   color: black;
   text-shadow: 1px 1px 1px white;
@@ -336,6 +357,7 @@ button {
   margin-left: 2ex;
   background-color: lightgray;
   border: 2px outset gray;
+  width: 4ex;;
 }
 
 .content .app-settings .versions button.help:hover {
