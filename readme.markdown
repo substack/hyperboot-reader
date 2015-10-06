@@ -20,7 +20,7 @@ content gathered from peer to peer networks like webtorrent and ipfs.
 * [ ] load app and history over ipfs
 * [X] save preferred version
 * [X] run preferred version
-* [ ] check for updates over http
+* [X] check for updates over http
 * [ ] check for updates over webtorrent/bep44
 * [ ] check for updates over ipfs
 * [ ] show activity feed

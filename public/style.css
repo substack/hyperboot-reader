@@ -345,6 +345,10 @@ button {
   vertical-align: top;
 }
 
+.content .app-settings .check {
+  width: 30ex;
+}
+
 .content .app-settings .right h2 {
   background-color: black;
   color: white;
