@@ -109,6 +109,11 @@ button {
   padding: 1.8ex;
 }
 
+.modal > .box .app-id {
+  margin-left: 3ex;
+  color: darkgray;
+}
+
 .modal > .box .title .close {
   position: absolute;
   top: 0.5ex;
@@ -120,6 +125,7 @@ button {
   padding-right: 2ex;
   background-color: darkgray;
   border: 2px outset lightgray;
+  text-shadow: 1px 1px 1px black;
 }
 
 .modal > .box .title .close:hover {
@@ -137,11 +143,34 @@ button {
   margin-top: 2em;
 }
 
-.modal > .box .buttons {
+.modal > .box .buttons button {
+  width: 15ex;
+  padding: 1ex;
+}
+
+.modal > .box .buttons button.remove {
+  background-color: crimson;
+  border: 2px outset red;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .modal > .box .buttons button.cancel {
   margin-left: 20ex;
+  background-color: darkgray;
+  border: 2px outset darkgray;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.modal > .box .buttons button:hover {
+  background-color: deeppink;
+  border: 2px outset deeppink;
+}
+
+.modal > .box .buttons button:active {
+  background-color: lime;
+  border: 2px inset lime;
 }
 
 .modal .inner {
@@ -291,6 +320,11 @@ button {
   margin-bottom: 3em;
 }
 
+.content .app-settings button.cancel {
+  background-color: darkgray;
+  color: white;
+}
+
 .content .app-settings button:hover {
   background-color: deeppink;
   border: 2px outset pink;
@@ -355,8 +389,10 @@ button {
 
 .content .app-settings .versions button.help {
   margin-left: 2ex;
-  background-color: lightgray;
-  border: 2px outset gray;
+  background-color: darkgray;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: 2px outset darkgray;
   width: 4ex;;
 }
 
