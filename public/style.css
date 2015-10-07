@@ -413,3 +413,8 @@ button {
 .content .app-settings .locations {
   margin-bottom: 1em;
 }
+
+.content .app-settings .share input {
+  width: 85%;
+  padding: 1ex;
+}
