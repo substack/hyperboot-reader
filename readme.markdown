@@ -16,7 +16,7 @@ content gathered from peer to peer networks like webtorrent and ipfs.
 # project status
 
 * [X] load app and history over http
-* [ ] load app and history over webtorrent
+* [X] load app and history over webtorrent
 * [ ] load app and history over ipfs
 * [X] save preferred version
 * [X] run preferred version
